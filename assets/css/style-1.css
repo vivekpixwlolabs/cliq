@@ -271,11 +271,14 @@ header {
   padding: 35px 0;
   display: block;
   text-transform: uppercase;
-color:white;
-   font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
 }
 
 /* Logo */
@@ -629,7 +632,7 @@ align-items: center;
     font-size: 14px;
     letter-spacing: 0.25px;
     color: #6b6b6b;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     align-items: center;
     gap: 7px;
 }
@@ -759,8 +762,18 @@ section.four-column-content-layout .swiper-wrapper {
     letter-spacing: 2px;
     color: #333;
     text-transform: uppercase;
+    padding-bottom: 15px;
 }
-
+section.four-column-layout p {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
 @media(max-width:786px){
   .four-column-layout ul li, .four-column-content-layout ul li {
     width: 40%;
@@ -999,18 +1012,28 @@ section.four-column-content-layout img {
     position: relative;
     z-index: 4;
     width: 100%;
-    max-width: 760px;
+    max-width: 948px;
     margin: 0 auto;
     padding: 0 30px;
 }
 .fullimage-overlay-section .center-div h2, .fullimage-overlay-section .center-div p {
     color: white;
 }
+.fullimage-overlay-section h2 {
+  font-size: 55px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+}
 .fullimage-overlay-section .rating {
     margin: 15px 0px;
 }
 .fullimage-overlay-section .center-div a {
-    margin-top: 30px;
+    margin-top: 48px;
 }
 .fullimage-overlay-section p {
     padding: 20px 0px 0px;
@@ -1022,7 +1045,7 @@ section.four-column-content-layout img {
 }
 
 .fullwidth-content-column-section .content {
-    padding: 100px 0px;
+    padding: 100px 0px 128px;
 }
 
 .fullwidth-content-column-section .slide p {
@@ -1143,8 +1166,7 @@ section.fullwidth-content-column-section .mask-bg, section.instagram-feed .mask-
 
 }
 /* ========== INSTAGRAM SECTION ========== */
-.instagram-feed {
-  text-align: center;
+
  .instagram-feed {
     text-align: center;
     background-color: #fff;
@@ -1152,6 +1174,14 @@ section.fullwidth-content-column-section .mask-bg, section.instagram-feed .mask-
     background-size: cover;
     background-repeat: no-repeat;
 }
+.insta-header h2 a {
+  font-size: 45px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 0.82px;
+  color: #000;
 }
 
 .instagram-feed .container-1440 {
@@ -1335,7 +1365,7 @@ html {
 /* ========== FOOTER SECTION ========== */
 .footer {
     background: #12484a;
-    padding: 50px 0 21px;
+    padding: 89px 0 21px;
 }
 
 .footer-container {
@@ -1447,8 +1477,8 @@ width:400px;
 .footer-links {
   display: flex;
   flex: 1 1 300px;
- justify-content:space-between;
 padding-left: 40px;
+gap:50px;
 }
 
 .footer-column h4 {
@@ -1474,9 +1504,15 @@ padding-left: 40px;
 }
 
 .footer-column ul li a {
-  color: #fff;
   opacity: 0.5;
   font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 0.44px;
+  color: #fff;
+
 }
 
 .footer-column ul li a:hover {
