@@ -651,6 +651,7 @@ align-items: center;
   line-height: 1.13;
   letter-spacing: 1px;
   color: #000;
+  padding-bottom: 18px;
 }
 
 .half-image-half-content .price {
@@ -737,10 +738,10 @@ align-items: center;
     padding: 50px 0px 100px;
 }
 .four-column-layout ul li, .four-column-content-layout .swiper-slide {
-    width: 208px;
+  width: 264px;
 }
 .four-column-layout ul, .four-column-content-layout ul {
-    gap: 40px;
+    gap: 28px;
 }
 section.four-column-content-layout .swiper-wrapper {
     justify-content: space-around;
