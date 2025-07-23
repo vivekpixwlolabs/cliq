@@ -28,7 +28,7 @@
 
 const threeColumnSlider = new Swiper(".three-column-section", {
   slidesPerView: 3,
-  spaceBetween: 80,
+  spaceBetween: 92,
   navigation: {
     nextEl: ".swiper-next-product",
     prevEl: ".swiper-prev-product"

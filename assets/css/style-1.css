@@ -81,7 +81,7 @@ font-size: 14px;
     text-align: center;
     color: #fff;
     width: 100%;
-   padding: 18px 36px 13px 38px;
+    padding: 18px 24px 13px 27px;
     background-color: #e55030;
     text-decoration: none;
     max-width: fit-content;
@@ -167,6 +167,13 @@ text-align:center;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.container-1148{
+  width: 1148px; /* total width for 4 items with gaps + padding */
+  padding: 0 20px; /* padding only on the sides */
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* Utility Classes */
@@ -743,8 +750,12 @@ align-items: center;
 .four-column-layout ul, .four-column-content-layout ul {
     gap: 28px;
 }
+.four-column-content-layout .swiper-slide{
+  width: 208px;
+}
 section.four-column-content-layout .swiper-wrapper {
     justify-content: space-around;
+    gap:92px;
 }
 .icon {
     width: 60px;
@@ -942,7 +953,16 @@ section.four-column-content-layout img {
   display: inline-block;
   color: #fff;
   font-size: 14px;
-  text-decoration: underline;
+  position: relative;
+}
+.two-row-image-content-layout .text-section a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: white;
+  bottom: 0px;
+  left: 0px;
 }
 .two-row-image-content-layout li:nth-child(3) .text-section, 
 .two-row-image-content-layout li:nth-child(4) .text-section, 
@@ -1017,6 +1037,11 @@ section.four-column-content-layout img {
     margin: 0 auto;
     padding: 0 30px;
 }
+.fullimage-overlay-section .center-div p {
+  max-width: 685px;
+  margin: 0px auto;
+  width: 100%;
+}
 .fullimage-overlay-section .center-div h2, .fullimage-overlay-section .center-div p {
     color: white;
 }
@@ -1060,8 +1085,15 @@ section.four-column-content-layout img {
     padding: 20px 0px 35px;
 }
 .fullwidth-content-column-section .three-column-section {
-    gap: 92px;
-    position: relative;
+  gap: 92px;
+  position: relative;
+  width: 1115px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.fullwidth-content-column-section .swiper-slide {
+  max-width: 297px;
 }
 .fullwidth-content-column-section .username {
     font-size: 14px;
@@ -1085,11 +1117,11 @@ section.four-column-content-layout img {
 }
 
 .swiper-prev-product {
-    left: -80px;
+    left: -20px;
 }
 
 .swiper-next-product {
-    right: 0px;
+    right: 53px;
 }
 
 .arrow-section .swiper-prev-product, .arrow-section .swiper-next-product {
@@ -1171,7 +1203,7 @@ section.fullwidth-content-column-section .mask-bg, section.instagram-feed .mask-
  .instagram-feed {
     text-align: center;
     background-color: #fff;
-    background: url(../../asstes/images/topo-bg@3x.webp);
+    background: url(../images/topo-bg.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1185,8 +1217,12 @@ section.fullwidth-content-column-section .mask-bg, section.instagram-feed .mask-
   color: #000;
 }
 
-.instagram-feed .container-1440 {
-  padding: 60px 10px;
+.instagram-feed .container-1184 {
+  width:100%;
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 94px 20px;
+  box-sizing: border-box;
 }
 
 .insta-header {
@@ -1194,7 +1230,7 @@ section.fullwidth-content-column-section .mask-bg, section.instagram-feed .mask-
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .insta-header h2 a {
@@ -1211,21 +1247,22 @@ section.fullwidth-content-column-section .mask-bg, section.instagram-feed .mask-
 }
 
 .insta-gallery ul {
-      display: flex;
+  display: flex;
+      gap: 28px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
       flex-wrap: wrap;
-      width: calc(100% + 10px);
-      margin-left: -10px;
 }
 .insta-gallery ul li {
-width: 25%;
-padding-left: 24px;
+  flex: 0 0 auto;
 }
 .insta-gallery ul li a {
-  display: block;
   position: relative;
-  height: calc(16.3vw - 10px);
-  max-height: 265px;
-  margin-bottom: 24px;
+  width: 265px;
+  height: 265px;
+  display: block;
+  overflow: hidden;
 }
 
 .insta-gallery ul li a img {
